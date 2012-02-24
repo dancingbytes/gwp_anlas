@@ -381,7 +381,7 @@ var ShortcutElement = Ext.extend(Ext.Button, {
     }
 
     if (this.runApp) {
-      cmd(this.runApp);
+      App.cmd(this.runApp);
     }
 
   } // onClick
