@@ -1,0 +1,614 @@
+* {
+  font-family: tahoma, helvetica, sans-serif, arial;
+}
+
+.x-window-header-text {
+  background: image_url("/assets/gwp_anlas/icons/16/default.png") no-repeat scroll left center transparent;
+}
+
+/* Desktop Toolbar */
+div.desktor-base-toolbar {
+
+  position: relative;
+  z-index:1;
+  border-bottom:1px solid #084b74;
+  background-color:#6297B9;
+  background-color: rgba(255, 255, 255, 0.36);
+  overflow:hidden;
+  height:41px;
+
+}
+
+div.icon-pad,
+div.account-panel {
+
+  position: absolute;
+  top:1px;
+  height:40px;
+  z-index:2;
+  overflow:hidden;
+
+}
+
+/** Icon-pad */
+.icon-pad-btn-wrap,
+.icon-pad-btn-wrap button {
+  width:  52px;
+  height: 37px;
+}
+
+.icon-pad .x-btn {
+  display:  block;
+  position: relative;
+}
+
+.icon-pad-strip-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.icon-pad-scrolling .icon-pad-strip-wrap {
+  margin:0 20px;
+}
+
+.icon-pad-strip {
+  width: 50000px;
+  display:block;
+  overflow:hidden;
+}
+
+.icon-pad-strip li {
+  float:left;
+}
+
+.icon-pad-strip-edge {
+  background: none repeat scroll 0 0 transparent !important;
+  border: 0 none !important;
+  float: left;
+  font-size: 1px !important;
+  line-height: 1px !important;
+  margin: 0 !important;
+  overflow: hidden;
+  padding: 0 !important;
+  width: 1px;
+}
+
+.icon-pad-scroller-left,
+.icon-pad-scroller-right {
+  position: absolute !important;
+  top:0;
+}
+
+.icon-pad-scroller-left {
+  left:0;
+}
+
+.icon-pad-scroller-right {
+  right:0;
+}
+
+.icon-pad-arrow-left,
+.icon-pad-arrow-right,
+.icon-pad-arrow-left button,
+.icon-pad-arrow-right button {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-pad-arrow-left,
+.icon-pad-arrow-right {
+  margin-top:10px;
+}
+
+.icon-pad-arrow-left button {
+  background:transparent image_url('/assets/gwp_anlas/desktop/arrow.png') no-repeat 4px -20px !important;
+}
+
+.icon-pad-arrow-right button {
+  background:transparent image_url('/assets/gwp_anlas/desktop/arrow.png') no-repeat 7px -40px !important;
+}
+
+.x-btn-over .icon-pad-arrow-left button {
+  background:transparent image_url('/assets/gwp_anlas/desktop/arrow.png') no-repeat 4px 0 !important;
+}
+
+.x-btn-over .icon-pad-arrow-right button {
+  background:transparent image_url('/assets/gwp_anlas/desktop/arrow.png') no-repeat 7px -60px !important;
+}
+
+.icon-pad-btn-wrap {
+
+  left:0; top:0;
+  position:absolute;
+  background-color:#ccdee9;
+  box-shadow: 0px 0px 1px 0 rgba(0, 0, 0, 0.9);
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-background-clip: padding-box;
+  border-left:1px solid #444;
+}
+
+.x-btn-menu-active .icon-pad-btn-wrap,
+.x-btn-over .icon-pad-btn-wrap,
+.x-btn-active .icon-pad-btn-wrap {
+  background-color: #fff;
+}
+
+.icon-pad button {
+  display:block;
+  background:transparent image_url('/assets/gwp_anlas/icons/32/default.png') no-repeat center center;
+
+}
+
+/** Account panel */
+.account-panel {
+  overflow:hidden;
+}
+
+.account-panel table {
+  width:100%;
+  height:100%;
+}
+
+
+div.desktop-toolbar-menu-slider {
+
+  background-image: none;
+  border:0;
+  padding:0;
+  background-color:#f2f2f2;
+  background-color:rgba(242, 242, 242, 0.9);
+  box-shadow: -2px 4px 5px -1px rgba(0, 0, 0, 0.9);
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-background-clip: padding-box;
+
+}
+
+div.desktop-toolbar-menu-slider ul.x-menu-list {
+
+  overflow: hidden;
+  padding:4px;
+
+}
+
+div.desktop-toolbar-menu-slider li.x-menu-list-item {
+
+  float:left;
+  margin:4px;
+
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-background-clip: padding-box;
+
+  background: #ededed; /* Old browsers */
+  background: -moz-linear-gradient(top, #fcfff4 0%, #c0c0c0 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfff4), color-stop(100%,#c0c0c0)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #fcfff4 0%,#c0c0c0 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #fcfff4 0%,#c0c0c0 100%); /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #fcfff4 0%,#c0c0c0 100%); /* IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#c0c0c0',GradientType=0 ); /* IE6-9 */
+  background: linear-gradient(top, #fcfff4 0%,#c0c0c0 100%); /* W3C */
+  border: 1px solid #797979;
+
+}
+
+div.desktop-toolbar-menu-slider li.x-menu-item-active {
+  border: 3px solid #085b8e;
+}
+
+div.desktop-toolbar-menu-slider .x-menu-item {
+
+  position:relative;
+  width: 77px;
+  height: 55px;
+  display: block;
+  cursor: pointer;
+  overflow:hidden;
+
+}
+
+div.desktop-toolbar-menu-slider li.x-menu-item-active .x-menu-item {
+  height: 53px;
+  width: 75px;
+}
+
+div.desktop-toolbar-menu-slider li.x-menu-list-item .x-text {
+
+  position:relative;
+  top:23px;
+  color:#5a5a5a;
+  font-size:15px;
+  text-align:center;
+
+}
+
+div.desktop-toolbar-menu-slider li.x-menu-item-active .x-text {
+  top:22px;
+}
+
+/** Account panel */
+.logoff button {
+
+  font-size: 13px;
+  color:#000;
+  text-align:right;
+  padding-right:20px !important;
+  background:transparent image_url('/assets/gwp_anlas/icons/panel/exit.png') no-repeat 100% 100%;
+  text-decoration:underline;
+
+}
+
+.account-panel-txt {
+  overflow:hidden;
+}
+
+.account-panel-txt span {
+
+  font-size: 13px;
+  line-height: 18px;
+  padding-left:20px !important;
+  text-align:left;
+  white-space: nowrap;
+  background:transparent image_url('/assets/gwp_anlas/icons/panel/user.png') no-repeat 0 0;
+
+}
+
+/* Shortcuts */
+div.ux-shortcut-cnt {
+	overflow:hidden;
+}
+
+div.ux-shortcut-cnt div.column {
+
+	float:left;
+	padding:0 20px;
+	overflow:hidden;
+
+}
+
+div.ux-shortcut-cnt div.column-title {
+
+	font-size:18px;
+	color:#fff;
+	padding:20px 0;
+	text-align:center;
+  text-shadow: 1px 1px 1px #000000;
+
+}
+
+div.ux-shortcut-cnt div.column-body .x-btn-over div.text {
+	color:#cc3300;
+}
+
+div.ux-shortcut-btn {
+
+	width:80px;
+	margin:0 auto 20px auto;
+	position:relative;
+	z-index:1;
+
+}
+
+div.ux-shortcut-btn div.notice {
+
+	position:absolute;
+	z-index:1;
+	right:10px;
+	top:0px;
+
+	background-color:#f00;
+	color:#fff;
+	line-height:16px;
+	padding: 0 4px;
+	font-size:11px;
+  box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.9);
+	border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-background-clip: padding-box;
+
+}
+
+div.ux-shortcut-btn div.box {
+
+	width:48px;
+	height:48px;
+	margin:0 auto;
+	display:block;
+  background:transparent image_url('/assets/gwp_anlas/icons/48/default.png') no-repeat center center;
+
+}
+
+div.ux-shortcut-btn div.text {
+	text-align:center;
+	color:#fff;
+	padding:10px 0 0 0;
+  font-size:12px;
+  text-shadow:1px 1px 0px rgba(0,0,0, 0.4);
+}
+
+/** Calls icons */
+.x-window-header .calls-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/16/calls.png' );
+}
+
+.icon-pad button.calls-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/32/calls.png' ) !important;
+}
+
+.ux-shortcut-btn .calls-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/48/calls.png' ) !important;
+}
+
+/** Catalog icons */
+.x-window-header .catalog-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/16/catalog.png' );
+}
+
+.icon-pad button.catalog-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/32/catalog.png' ) !important;
+}
+
+.ux-shortcut-btn .catalog-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/48/catalog.png' ) !important;
+}
+
+/** Chat icons */
+.x-window-header .chat-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/16/chat.png' );
+}
+
+.icon-pad button.chat-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/32/chat.png' ) !important;
+}
+
+.ux-shortcut-btn .chat-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/48/chat.png' ) !important;
+}
+
+/** Comments icons */
+.x-window-header .comments-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/16/comments.png' );
+}
+
+.icon-pad button.comments-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/32/comments.png' ) !important;
+}
+
+.ux-shortcut-btn .comments-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/48/comments.png' ) !important;
+}
+
+/** Feedback icons */
+.x-window-header .feedback-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/16/feedback.png' );
+}
+
+.icon-pad button.feedback-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/32/feedback.png' ) !important;
+}
+
+.ux-shortcut-btn .feedback-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/48/feedback.png' ) !important;
+}
+
+/** Files icons */
+.x-window-header .files-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/16/files.png' );
+}
+
+.icon-pad button.files-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/32/files.png' ) !important;
+}
+
+.ux-shortcut-btn .files-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/48/files.png' ) !important;
+}
+
+/** Gallery icons */
+.x-window-header .gallery-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/16/gallery.png' );
+}
+
+.icon-pad button.gallery-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/32/gallery.png' ) !important;
+}
+
+.ux-shortcut-btn .gallery-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/48/gallery.png' ) !important;
+}
+
+/** Menu icons */
+.x-window-header .menu-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/16/menu.png' );
+}
+
+.icon-pad button.menu-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/32/menu.png' ) !important;
+}
+
+.ux-shortcut-btn .menu-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/48/menu.png' ) !important;
+}
+
+/** Mail icons */
+.x-window-header .mail-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/16/mail.png' );
+}
+
+.icon-pad button.mail-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/32/mail.png' ) !important;
+}
+
+.ux-shortcut-btn .mail-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/48/mail.png' ) !important;
+}
+
+/** News icons */
+.x-window-header .news-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/16/news.png' );
+}
+
+.icon-pad button.news-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/32/news.png' ) !important;
+}
+
+.ux-shortcut-btn .news-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/48/news.png' ) !important;
+}
+
+/** Orders icons */
+.x-window-header .orders-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/16/orders.png' );
+}
+
+.icon-pad button.orders-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/32/orders.png' ) !important;
+}
+
+.ux-shortcut-btn .orders-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/48/orders.png' ) !important;
+}
+
+/** Pages icons */
+.x-window-header .pages-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/16/pages.png' );
+}
+
+.icon-pad button.pages-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/32/pages.png' ) !important;
+}
+
+.ux-shortcut-btn .pages-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/48/pages.png' ) !important;
+}
+
+/** Sall icons */
+.x-window-header .sall-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/16/sall.png' );
+}
+
+.icon-pad button.sall-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/32/sall.png' ) !important;
+}
+
+.ux-shortcut-btn .sall-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/48/sall.png' ) !important;
+}
+
+/** Schedule icons */
+.x-window-header .schedule-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/16/schedule.png' );
+}
+
+.icon-pad button.schedule-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/32/schedule.png' ) !important;
+}
+
+.ux-shortcut-btn .schedule-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/48/schedule.png' ) !important;
+}
+
+/** Search icons */
+.x-window-header .search-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/16/search.png' );
+}
+
+.icon-pad button.search-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/32/search.png' ) !important;
+}
+
+.ux-shortcut-btn .search-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/48/search.png' ) !important;
+}
+
+/** User icons */
+.x-window-header .users-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/16/users.png' );
+}
+
+.icon-pad button.users-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/32/users.png' ) !important;
+}
+
+.ux-shortcut-btn .users-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/48/users.png' ) !important;
+}
+
+/** Delivery icons */
+.x-window-header .delivery-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/16/delivery.png' );
+}
+
+.icon-pad button.delivery-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/32/delivery.png' ) !important;
+}
+
+.ux-shortcut-btn .delivery-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/48/delivery.png' ) !important;
+}
+
+/** Payment icons */
+.x-window-header .payment-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/16/pay.png' );
+}
+
+.icon-pad button.payment-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/32/pay.png' ) !important;
+}
+
+.ux-shortcut-btn .payment-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/48/pay.png' ) !important;
+}
+
+/** Banners icons */
+.x-window-header .banners-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/16/banners.png' );
+}
+
+.icon-pad button.banners-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/32/banners.png' ) !important;
+}
+
+.ux-shortcut-btn .banners-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/48/banners.png' ) !important;
+}
+
+/** Brands icons */
+.x-window-header .brands-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/16/brands.png' );
+}
+
+.icon-pad button.brands-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/32/brands.png' ) !important;
+}
+
+.ux-shortcut-btn .brands-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/48/brands.png' ) !important;
+}
+
+/** Documents icons */
+.x-window-header .documents-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/16/documents.png' );
+}
+
+.icon-pad button.documents-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/32/documents.png' ) !important;
+}
+
+.ux-shortcut-btn .documents-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/48/documents.png' ) !important;
+}
+
+/** Newprod icons */
+.x-window-header .newprod-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/16/newprod.png' );
+}
+
+.icon-pad button.newprod-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/32/newprod.png' ) !important;
+}
+
+.ux-shortcut-btn .newprod-icon {
+  background-image: image_url( '/assets/gwp_anlas/icons/48/newprod.png' ) !important;
+}
