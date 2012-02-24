@@ -1,11 +1,11 @@
-//= require ./gwp_anlas/toolbar/account_panel.js
-//= require ./gwp_anlas/toolbar/icon_button.js
-//= require ./gwp_anlas/toolbar/task_button_bar.js
+//= require gwp_anlas/toolbar/account_panel.js
+//= require gwp_anlas/toolbar/icon_button.js
+//= require gwp_anlas/toolbar/task_button_bar.js
 
-//= require ./gwp_anlas/bg_manager.js
-//= require ./gwp_anlas/toolbar.js
-//= require ./gwp_anlas/shortcut.js
-//= require ./gwp_anlas/desktop.js
+//= require gwp_anlas/bg_manager.js
+//= require gwp_anlas/toolbar.js
+//= require gwp_anlas/shortcut.js
+//= require gwp_anlas/desktop.js
 
 var shortcut = new Shortcut({
 
