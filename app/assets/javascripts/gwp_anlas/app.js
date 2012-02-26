@@ -7,7 +7,7 @@
 //= require gwp_anlas/shortcut.js
 //= require gwp_anlas/desktop.js
 
-new Desktop({
+Workplace = new Desktop({
 
   bgCfg: {
    	url   : "<%= image_path('/assets/gwp_anlas/desktop/background.gif') %>",
