@@ -211,7 +211,9 @@ var Desktop = function(config) {
       this.plugins = this.initPlugin(this.plugins);
     }
 
-  }
+  }; // if
+
+  this.render(Ext.getBody());
 
 }; // Desktop
 
@@ -235,6 +237,14 @@ Ext.extend(Desktop, Ext.util.Observable, {
 
     this.bg = new BgManager();
     this.bg.init(this);
+
+    this.shortcuts = new Shortcut();
+    this.shortcuts.init(this);
+
+    if (App.Shortcuts) {
+      this.shortcuts.add(App.Shortcuts);
+      delete App.Shortcuts;
+    }
 
   }, // initComponent
 

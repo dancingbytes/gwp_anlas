@@ -91,15 +91,7 @@ Ext.extend(Shortcut, Ext.util.Observable, {
       this.items = new Ext.util.MixedCollection(false, this.getComponentId);
 
       if (items) {
-
-        if (Ext.isArray(items)) {
-          if (items.length > 0) {
-            this.add.apply(this, items);
-          }
-        } else {
-          this.add(items);
-        }
-
+        this.add(items);
       }
 
       container.shortcuts = this;
@@ -169,15 +161,21 @@ Ext.extend(Shortcut, Ext.util.Observable, {
 
   add: function(comp) {
 
-  	var a = arguments, len = a.length;
-	  if(len > 1){
-	  	for(var i = 0; i < len; i++) {
-	     	this.add(a[i]);
-	    }
-	    return;
-	  }
+    if (!this.rendered) {
+      this.items = comp;
+      return;
+    }
 
-	  var c = this.lookupComponent(comp);
+    if (Ext.isArray(comp)) {
+
+      for(var i = 0, len = comp.length; i < len; i++) {
+        this.add(comp[i]);
+      }
+      return;
+
+    }; // if
+
+    var c = this.lookupComponent(comp);
 	  var pos = this.items.length;
 
 	  this.onBeforeAdd(c);
