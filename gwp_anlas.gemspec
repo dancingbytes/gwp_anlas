@@ -11,8 +11,8 @@ Gem::Specification.new do |s|
   s.description = 'Workplace for Gektor-based administration system'
 
   s.files = `git ls-files`.split("\n")
-  s.extra_rdoc_files = ['LICENSE.BSD', 'README.md']
   s.require_paths = ['lib']
+  s.has_rdoc = false
 
   s.licenses = ['BSD']
 

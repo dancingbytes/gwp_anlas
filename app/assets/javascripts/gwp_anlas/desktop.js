@@ -314,7 +314,7 @@ Ext.extend(Desktop, Ext.util.Observable, {
 
     Ext.QuickTips.init();
 
-    App.cmd( document.location.hash.substr(1) );
+    cmd( document.location.hash.substr(1) );
 
     this.fireEvent("afterrender", this);
 
