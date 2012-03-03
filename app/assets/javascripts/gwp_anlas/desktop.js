@@ -256,6 +256,8 @@ Ext.extend(Desktop, Ext.util.Observable, {
     	this.rendered = true;
       this.container = ct;
 
+      this.container.dom.innerHTML = "";
+      Ext.QuickTips.init();
       this.onRender(this.container);
 
       if (this.cls) {
