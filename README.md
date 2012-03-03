@@ -1,4 +1,4 @@
-Gektor workplace Anlas (gwp_anlas)
+Workplace "Anlas" for Gektor (gwp_anlas)
 ======
 
 Workplace "Anlas" for Gektor-based administration system.

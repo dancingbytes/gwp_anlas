@@ -6,8 +6,8 @@ Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
   s.authors = ['Tyralion']
   s.email = ['piliaiev@gmail.ru']
-  s.homepage = 'https://github.com/dancingbytes/gwp-anlas'
-  s.summary = 'Workplace for Gektor-based administration system'
+  s.homepage = 'https://github.com/dancingbytes/gwp_anlas'
+  s.summary = 'Workplace "Anlas" for Gektor (gwp_anlas)'
   s.description = 'Workplace for Gektor-based administration system'
 
   s.files = `git ls-files`.split("\n")
