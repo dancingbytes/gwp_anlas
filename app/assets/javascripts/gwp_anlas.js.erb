@@ -2,3 +2,21 @@ require(
 	"<%= image_path('/assets/gwp_anlas.css') %>",
 	"<%= image_path('/assets/gwp_anlas/app.js') %>"
 );
+
+App.on({
+  'waiting' : function(o) {
+    Ext.getBody().addClass('proccess-wait');
+  },
+  'prepare': function(o) {
+    Ext.getBody().addClass('proccess-wait');
+  },
+  'execute': function(o) {
+    Ext.getBody().removeClass('proccess-wait');
+  },
+  'load': function(o) {
+    Ext.getBody().addClass('proccess-wait');
+  },
+  'error': function(o) {
+    Ext.getBody().removeClass('proccess-wait');
+  }
+});

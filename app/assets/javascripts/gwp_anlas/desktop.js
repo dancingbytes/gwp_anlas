@@ -1,3 +1,22 @@
+/*---------------------------------------------------------------------------
+ * Ext.Window
+ *-------------------------------------------------------------------------*/
+var handleReadyState = Ext.lib.Ajax.handleReadyState;
+var releaseObject    = Ext.lib.Ajax.releaseObject;
+
+Ext.lib.Ajax.handleReadyState = function() {
+
+  Ext.getBody().addClass('proccess-wait');
+  handleReadyState.apply(this, arguments);
+
+}; // handleReadyState
+
+Ext.lib.Ajax.releaseObject = function() {
+
+  Ext.getBody().removeClass('proccess-wait');
+  releaseObject.apply(this, arguments);
+
+}; // releaseObject
 
 /*---------------------------------------------------------------------------
  * Ext.Window

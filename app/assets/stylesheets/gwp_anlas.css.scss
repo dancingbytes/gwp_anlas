@@ -2,6 +2,12 @@
   font-family: tahoma, helvetica, sans-serif, arial;
 }
 
+/* System */
+body.proccess-wait,
+body.proccess-wait *{
+  cursor:wait !important;
+}
+
 .x-window-header-text {
   background: image_url("/assets/gwp_anlas/icons/16/default.png") no-repeat scroll left center transparent;
 }
